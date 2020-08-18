@@ -1,22 +1,29 @@
 
   form {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 200px;
+    padding-right: 150px;
+    padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     } 
+    
    
   .temperature {
       text-align: center;}
 
  
-.temp {font-size: 50px;}
-.units {
+.temp {
+  font-size: 50px;
+  position: relative;
+}
+
+  .units {
   font-size: 10px;
 }
 
 .border {
-    max-width: 600px;
+    max-width: 575px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -27,4 +34,20 @@
 
 li {
   list-style: none;
+}
+
+.city {
+  font: 15px lighter;
+  font-family: 'Times New Roman', Times, serif;
+}
+.country
+{
+  font: 15px lighter;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.mainemoji i {
+  font-size: 30px;
+  color: purple;
 }
