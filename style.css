@@ -1,6 +1,21 @@
-form {
-max-width: 620px;
-margin: 0 auto;
-padding:10px;
-background: blue;
+
+  form {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    }
+  .temperature {
+      text-align: center;}
+
+ 
+p1 {font-size: 50px;}
+
+.Weather-app {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+
 }
