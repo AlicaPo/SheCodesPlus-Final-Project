@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css"/>
   <title>Weather App</title>
 </head>
 
@@ -12,10 +12,11 @@
   <div class="container">
     <div class="border">
   <form>
-      <input type="search" placeholder="Enter a city" autocomplete="off" />
-      <button type="submit" class="btn btn-primary mb-2">Go</button>
+    <div class="form-group mb-2">
+      <input type="text" placeholder="Enter a city" autocomplete="off" />
+    </div>
+    <button type="button" class="btn btn-light">Go</button>
   </form>
-
  <br>
   <div class="maininfo">
     <div class="row">
@@ -25,8 +26,7 @@
 15
 </span>
 <span class="units">
-°C | 
-<a href="#">°F</a>
+°C |°F
 </span>
   </div>
 </div>
