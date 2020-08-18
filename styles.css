@@ -1,0 +1,26 @@
+
+  form {
+   display: block;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 10px;
+    }
+  .temperature {
+      text-align: center;}
+
+ 
+.temp {font-size: 50px;}
+.units {
+  font-size: 10px;
+}
+.float-left {
+  margin-left: 440px;
+}
+
+.Weather-app {
+    max-width: 600px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+}
