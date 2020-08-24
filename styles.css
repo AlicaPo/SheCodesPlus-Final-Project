@@ -95,6 +95,11 @@ small {
   font-family: 'Times New Roman', Times, serif;
   font: lighter;
 }
+
+a {
+  color: #C6AB80;
+}
+
 .mainemoji i {
   font-size: 30px;
   color:#56382E;
