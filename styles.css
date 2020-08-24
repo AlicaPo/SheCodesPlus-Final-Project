@@ -6,6 +6,7 @@
     padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    
     } 
     
    
@@ -14,12 +15,37 @@
 
  
 .temp {
-  font-size: 50px;
+  font-size: 75px;
   position: relative;
+  left: 190px;
+  bottom: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
   .units {
-  font-size: 10px;
+  font-size: 15px;
+  position: relative;
+  bottom: 115px;
+  left: 270px;
+  display: block;
+  margin: 0 auto;
+}
+
+.second {
+  position: relative;
+ right: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fivedays {
+  position: relative;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  left: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .border {
@@ -50,4 +76,6 @@ li {
 .mainemoji i {
   font-size: 30px;
   color: purple;
+  position: relative;
+  top: 10px;
 }
