@@ -21,7 +21,7 @@
 .temp {
   font-size: 100px;
   position: relative;
-  left: 195px;
+  left: 190px;
   bottom: 35px;
   display: block;
   margin: 0 auto;
@@ -58,12 +58,11 @@
   position: relative;
   text-align: center;
   bottom: 25px;
-  size: 50%;
 }
 
 .second {
   position: relative;
-  right: 20px;
+  right: 10px;
    display: block;
    margin: 0 auto;
    font: 15px bold;
@@ -81,10 +80,16 @@ display: block;
   position: relative;
   top: 10px;
 }
-
 .day {
   font: 20px bold;
   font-family:'Libre Caslon Display', serif;
+}
+.dayemoji i {
+  font-size: 30px;
+  color: #71503A;
+  position: relative;
+  top: 5px;
+  bottom: 5px;
 }
 
 .border {
@@ -109,13 +114,4 @@ small {
 
 a {
   color: #C6AB80;
-}
-
-
-.dayemoji i {
-  font-size: 30px;
-  color: #71503A;
-  position: relative;
-  top: 5px;
-  bottom: 5px;
 }
