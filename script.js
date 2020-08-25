@@ -1,5 +1,6 @@
 let now = new Date();
-let p = document.querySelector("today");
+let p = document.querySelector("p");
+let p3 = document.querySelector("p3");
 let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();
@@ -20,4 +21,6 @@ let months = [
     "Dec"
   ];
   let month = months[now.getMonth()];
-  pinnerHTML = `${day} ${date} ${month} ${hours}:${minutes}`;
+
+  p.innerHTML = `${day} ${date} ${month}`;
+  p3.innerHTML = `${hours}:${minutes}`;
