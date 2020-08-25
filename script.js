@@ -20,4 +20,4 @@ let months = [
     "Dec"
   ];
   let month = months[now.getMonth()];
-  p.innerHTML = `${day} ${date} ${month} ${hours}:${minutes}`;
+  pinnerHTML = `${day} ${date} ${month} ${hours}:${minutes}`;
