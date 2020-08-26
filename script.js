@@ -1,8 +1,11 @@
 function search(event) {
     event.preventDefault();
-    let searchInput = document.querySelector("#search-text-input");}
+    let searchInput = document.querySelector("#search-text-input");
+let p2 = document.querySelector("p2");
+p2.innerHTML =`${searchInput.value},`;
+}
 
-    
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search)
 
