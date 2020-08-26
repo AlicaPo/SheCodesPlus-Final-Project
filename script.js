@@ -1,11 +1,10 @@
 function search(event) {
     event.preventDefault();
-    alert("Searching");
-}
+    let searchInput = document.querySelector("#search-text-input");}
 
-let form = document.querySelector("form");
+    
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", search)
-
 
 
 let now = new Date();
