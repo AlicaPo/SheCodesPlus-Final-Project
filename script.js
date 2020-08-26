@@ -1,3 +1,13 @@
+function search(event) {
+    event.preventDefault();
+    alert("Searching");
+}
+
+let form = document.querySelector("form");
+form.addEventListener("submit", search)
+
+
+
 let now = new Date();
 let p = document.querySelector("p");
 let p3 = document.querySelector("p3");
