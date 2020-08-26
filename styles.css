@@ -1,7 +1,7 @@
 
   body {
     font-family:'Libre Caslon Display', serif;
-    font: #2E3336
+    font:#4C231A
   }
 
   form {
@@ -18,7 +18,7 @@
       text-align: center;}
 
  
-.temp {
+h1 {
   font-size: 100px;
   position: relative;
   left: 170px;
@@ -46,7 +46,7 @@
 }
 .time {
   position: relative;
-  bottom: 10px;
+  bottom: 10px;;
 }
 .country
 {
@@ -68,7 +68,7 @@
    margin: 0 auto;
    font: 20px bolder;
    font-family:'Libre Caslon Display', serif;
-   font:#2E3336;
+   font: #4C231A;
 }
 
 .weekday {
@@ -94,7 +94,7 @@ background:#ECE0CC;
 }
 .dayemoji i {
   font-size: 30px;
-  color:  #164663;
+  color: #733326;
   position: relative;
   top: 5px;
   bottom: 5px;
@@ -114,6 +114,7 @@ background:#ECE0CC;
 
 li {
   list-style: none;
+  font: #4C231A;
 }
 
 small {

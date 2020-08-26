@@ -2,13 +2,16 @@ function search(event) {
     event.preventDefault();
     let searchInput = document.querySelector("#search-text-input");
 let p2 = document.querySelector("p2");
-p2.innerHTML =`${searchInput.value},`;
+if (searchInput.value) {
+    p2.innerHTML =`${searchInput.value},`;
+} else {
+    p2.innerHTML = null;
+    alert("What's your city ? 👽");
 }
-
+}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search)
-
 
 let now = new Date();
 let p = document.querySelector("p");
@@ -36,3 +39,7 @@ let months = [
 
   p.innerHTML = `${day} ${date} ${month}`;
   p3.innerHTML = `${hours}:${minutes}`;
+
+let city = "event"; 
+  let apiKey = "81e6b2d984f129f52f8a7e83729f37b1";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
