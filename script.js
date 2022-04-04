@@ -6,7 +6,7 @@ if (searchInput.value) {
     p2.innerHTML =`${searchInput.value},`;
 } else {
     p2.innerHTML = null;
-    alert("What's your city ? 👽");
+    alert("What's your city ?");
 }
 }
 
