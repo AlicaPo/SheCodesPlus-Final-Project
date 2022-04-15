@@ -40,6 +40,19 @@ let months = [
   p.innerHTML = `${day} ${date} ${month}`;
   p3.innerHTML = `${hours}:${minutes}`;
 
-let city = "event"; 
+
   let apiKey = "81e6b2d984f129f52f8a7e83729f37b1";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=Geneva&units=metric";
+
+
+  function showTemperature(response){
+      console.log(response.data);
+      let temperature = Math.round(response.data.main.temp);
+      let temperatureElement = document.querySelector("#temperature")
+      temperatureElement.innerHTML = `${response.data.main.temp}`; 
+  }
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+
+
+
+  let city = "event"; 
