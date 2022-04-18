@@ -1,25 +1,10 @@
-function search(event) {
-    event.preventDefault();
-    let searchInput = document.querySelector("#search-text-input");
-let p2 = document.querySelector("p2");
-if (searchInput.value) {
-    p2.innerHTML =`${searchInput.value},`;
-} else {
-    p2.innerHTML = null;
-    alert("What's your city ?");
-}
-}
-
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", search)
-
 let now = new Date();
 let p = document.querySelector("p");
 let p3 = document.querySelector("p3");
 let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();
-let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let day = days [now.getDay()];
 let months = [
     "Jan",
@@ -41,18 +26,24 @@ let months = [
   p3.innerHTML = `${hours}:${minutes}`;
 
 
-  let apiKey = "81e6b2d984f129f52f8a7e83729f37b1";
-  let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=Geneva&units=metric";
-
-
-  function showTemperature(response){
-      console.log(response.data);
-      let temperature = Math.round(response.data.main.temp);
-      let temperatureElement = document.querySelector("#temperature")
-      temperatureElement.innerHTML = `${response.data.main.temp}`; 
+function showTemperature(response) {
+    document.querySelector("#showCity").innerHTML = response.data.name;
+    document.querySelector("#showTemp").innerHTML = Math.round(
+      response.data.main.temp
+    );
   }
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+  
+  function searchCity(event) {
+    event.preventDefault();
+    let city = document.querySelector("#search-text-input").value;
+    let apiKey = "81e6b2d984f129f52f8a7e83729f37b1";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(showTemperature);
+  }
+  let form = document.querySelector("search-form");
+  form.addEventListener("submit", searchCity);
+  
 
 
 
-  let city = "event"; 
