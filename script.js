@@ -27,6 +27,7 @@ let months = [
 
 
 function showTemperature(response) {
+  console.log(response);
     document.querySelector("#showCity").innerHTML = response.data.name;
     document.querySelector("#showTemp").innerHTML = Math.round(
       response.data.main.temp
@@ -41,7 +42,7 @@ function showTemperature(response) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(showTemperature);
   }
-  let form = document.querySelector("search-form");
+  let form = document.querySelector("#search-form");
   form.addEventListener("submit", searchCity);
   
 
