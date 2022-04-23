@@ -165,3 +165,7 @@ small {
 a {
   color: #D3A075;
 }
+
+.active:hover {
+text-decoration: none;
+}
