@@ -19,10 +19,10 @@
 
  
 h2 {
-  font-size: 95px;
+  font-size: 115px;
   position: relative;
-  bottom: 20px;
   left: 170px;
+  bottom: 110px;
   display: block;
   margin: 0 auto;
 }
@@ -39,15 +39,15 @@ h4 {
   .units {
   font-size: 15px;
   position: relative;
-  bottom: 120px;
-  left: 255px;
+  bottom: 235px;
+  left: 282px;
   display: block;
   margin: 0 auto;
 }
 
 .maininfo {
   position: relative;
-  top: 15px;
+  left: 40px;
 }
 
 .today {
@@ -63,16 +63,33 @@ h4 {
   bottom: 12px;
 }
 
+
+p4 {
+  position: relative;
+  left: 140px;
+  bottom: 230px;
+  font: 15px italic;
+  font-family:'Libre Caslon Display', serif;
+}
+
+.mainIcon {
+  font-size: 50px;
+  position: relative;
+  bottom: 240px;
+  left: 270px;
+}
+
 .fivedays {
   position: relative;
   text-align: center;
-  bottom: 10px;
-  left: 45px;
+  bottom: 210px;
+  left: 42px;
 }
 
 .second {
   position: relative;
-  right: 20px;
+  top: 15px;
+  left: 50px;
    display: block;
    margin: 0 auto;
    font: 20px bolder;
@@ -109,7 +126,6 @@ background:#ECE0CC;
   top: 5px;
   bottom: 5px;
 }
-
 .container {
     max-width: 590px;
     height: 380px;
@@ -141,7 +157,9 @@ small {
   font-family: 'Times New Roman', Times, serif;
   font: lighter;
   position: relative;
-  top: 10px;
+  display: block;
+  top: 3px;
+  left: 430px;
 }
 
 a {

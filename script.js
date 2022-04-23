@@ -27,12 +27,19 @@ let months = [
 
 
 function showTemperature(response) {
-  console.log(response);
     document.querySelector("#showCity").innerHTML = response.data.name;
-    document.querySelector("#showTemp").innerHTML = Math.round(
-      response.data.main.temp
-    );
-  }
+    document.querySelector("#showTemp").innerHTML = Math.round(response.data.main.temp);
+
+  let info = document.querySelector("p4");
+   let showDescription = response.data.weather[0].description;
+   let showHumidity = Math.round(response.data.wind.speed);
+   let showWind= response.data.main.humidity;
+ 
+   info.innerHTML = `Mainly ${showDescription}, Humidity: ${showHumidity}% and Wind: ${showWind} km/h`
+ 
+  let mainIcon = document.querySelector("#icon");
+  mainIcon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+}
   
   function searchCity(event) {
     event.preventDefault();
@@ -45,6 +52,5 @@ function showTemperature(response) {
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", searchCity);
   
-
 
 
