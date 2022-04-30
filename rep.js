@@ -41,3 +41,74 @@ document.querySelector("#showDescription").innerHTML = response.data.weather[0].
     padding-right: 30px;
   padding-left: 30px;
   
+
+
+<div class="row">
+      <div class="col-2">
+        <ul class="weekday border">
+          <li class="day">
+            Mon
+          </li>
+          <li class="dayIcon">
+            <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="Clear" id="secondIcon" width="60" />
+          </li>
+          <li class="daytemp">
+            16°
+          </li>
+        </ul>
+      </div>
+  </div>
+  
+
+  <div class="col-2">
+        <ul class="weekday border">
+          <li class="day">
+            Tue
+          </li>
+          <li class="dayIcon">
+            <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="Clear" id="secondIcon" width="60" />
+          </li>
+          <li class="daytemp">
+            16°
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="weekday border">
+          <li class="day">
+            Wed
+          </li>
+          <li class="dayIcon">
+            <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="Clear" id="secondIcon" width="60" />
+          </li>
+          <li class="daytemp">
+            16°
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="weekday border">
+        <li class="day">
+          Thu
+        </li>
+        <li class="dayIcon">
+          <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="Clear" id="secondIcon" width="60" />
+        </li>
+        <li class="daytemp">
+          16°
+        </li>
+      </ul></div>
+      <div class="col-2">
+        <ul class="weekday border">
+          <li class="day">
+            Fri
+          </li>
+          <li class="dayIcon">
+            <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="Clear" id="secondIcon" width="60" />
+          </li>
+          <li class="daytemp">
+            16°
+          </li>
+        </ul>
+      </div>
+    </div>

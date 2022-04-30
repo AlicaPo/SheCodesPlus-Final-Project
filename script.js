@@ -82,8 +82,30 @@ let celsiusTemperature = null;
 
 function showForecast(){
   let forecast = document.querySelector("#forecast");
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   
-  let forecastHTML = 
+  let forecastHTML = `<div class= "row">`; 
+  days.forEach(function(day) {
+    forecastHTML = forecastHTML + 
+  ` <div class="col-2">
+  <ul class="weekday border">
+    <li class="day">
+      ${day}
+    </li>
+    <li class="dayIcon">
+      <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" id="secondIcon" width="60" />
+    </li>
+    <li class="daytemp">
+      16°
+    </li>
+  </ul>
+</div>`;
+
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+
 }
   
 showForecast();
