@@ -72,10 +72,18 @@ function showCelsiusTemperature(event) {
 
 }
 
-  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 let celsiusTemperature = null; 
+
+function showForecast(){
+  let forecast = document.querySelector("#forecast");
+  
+  let forecastHTML = 
+}
+  
+showForecast();

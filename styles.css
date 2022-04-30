@@ -73,7 +73,6 @@ p4 {
 }
 
 .mainIcon {
-  font-size: 50px;
   position: relative;
   bottom: 240px;
   left: 270px;
@@ -110,21 +109,18 @@ background:#ECE0CC;
 
 
 .daytemp {
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
-  top: 10px;
   left: 5px;
 }
 .day {
   font: 20px bold;
   font-family:'Libre Caslon Display', serif;
 }
-.dayemoji i {
-  font-size: 30px;
-  color: #733326;
+.dayIcon {
   position: relative;
-  top: 5px;
-  bottom: 5px;
+  display: block;
+  right: 15px;
 }
 .container {
     max-width: 590px;
@@ -144,8 +140,6 @@ button {
   position: relative;
   bottom: 10px;
   right: 10px;
-
-
 }
 
 li {
