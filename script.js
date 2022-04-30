@@ -35,7 +35,7 @@ function showTemperature(response) {
    let showHumidity = Math.round(response.data.wind.speed);
    let showWind= response.data.main.humidity;
  
-   info.innerHTML = `Mainly ${showDescription}, Humidity: ${showHumidity}% and Wind: ${showWind} km/h`
+   info.innerHTML = `Mainly ${showDescription}, Humidity: ${showHumidity}% and Wind: ${showWind} m/h`
  
    celsiusTemperature = response.data.main.temp;
 
